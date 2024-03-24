@@ -1,0 +1,260 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px 7%;
+  transition: 0.5s;
+}
+
+.logo {
+  width: 160px;
+  cursor: pointer;
+}
+
+ul {
+  flex: 1;
+  text-align: center;
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+  position: relative;
+}
+
+#navbar-link li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  color: #000;
+}
+
+#navbar-link li a:hover,
+#navbar-link li a.active {
+  color: #34d399;
+}
+
+#navbar-link li a:hover::after,
+#navbar-link li a.active::after {
+  content: '';
+  width: 30%;
+  height: 2px;
+  background: #34d399;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+.toggle-icon {
+  width: 50px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+#mobile {
+  width: 70px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: #000;
+  font-size: 3rem;
+  cursor: pointer;
+  display: none;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background: #242424;
+}
+
+.search-box input {
+  padding: 6px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 18px;
+  max-width: 200px;
+}
+
+.search-box input::placeholder {
+  color: #fff;
+}
+
+.search-box img {
+  width: 20px;
+  cursor: pointer;
+}
+
+.dark .navbar {
+  background: #000;
+  color: #fff;
+}
+.dark #navbar-link li a {
+  color: #fff;
+}
+.dark .search-box {
+  background: #fff;
+}
+
+.dark .search-box input {
+  background: #fff;
+}
+.dark #mobile {
+  color: #fff;
+}
+
+.dark .search-box input::placeholder {
+  background: #fff;
+  color: #000;
+}
+
+@media only screen and (max-width: 600px) {
+  #navbar-link {
+    display: none;
+  }
+
+  #mobile {
+    width: 70px;
+    height: 50px;
+    background: none;
+    border: none;
+    color: #000;
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .dark #navbar-link {
+    background: #000;
+    color: #fff;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding-bottom: 35px;
+  }
+
+  .logo {
+    width: 215px;
+  }
+
+  #navbar-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    position: fixed;
+    top: 307px;
+    right: -300px;
+    padding: 40px 0 0 10px;
+    width: 300px;
+    height: 85vh;
+    margin-bottom: 25px;
+    box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    overflow: scroll;
+    height: calc(100vh - 85px);
+  }
+}
+
+#navbar-link.active {
+  right: 0px;
+}
+
+#navbar-link li {
+  margin-bottom: 25px;
+}
+.search-box {
+  padding: 5px 9px;
+  width: 9.7rem;
+}
+
+.search-box input {
+  max-width: 116px;
+}
+.toggle-icon {
+  margin-left: 0px;
+}
+#mobile {
+  display: block;
+}
+
+#mobile i {
+  padding-left: 30px;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding-bottom: 35px;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  #mobile {
+    display: none;
+  }
+  #navbar-link {
+    flex: none;
+  }
+
+  .toggle-icon {
+    margin-left: 5rem;
+  }
+  .search-box {
+    padding: 3px 38px;
+    width: 18rem;
+  }
+  .search-box input {
+    max-width: 15rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+  .navbar {
+    display: block;
+  }
+} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #navbar-link {
+    margin-bottom: 0px;
+  }
+  #navbar-link li {
+    margin-bottom: 6px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #navbar-link li {
+    margin-bottom: 9px;
+  }
+  #navbar-link {
+    flex: 1;
+  }
+}
