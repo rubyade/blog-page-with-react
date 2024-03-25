@@ -77,6 +77,9 @@ pages styling */
   background-size: cover;
   height: 100vh;
 }
+.login-container {
+  background-color: gainsboro;
+}
 
 .signup-container {
   background-color: #fff;
@@ -234,17 +237,27 @@ pages styling */
   margin-right: 10px;
 }
 
+.form-btn {
+  background-color: rgb(235, 23, 0);
+  color: white;
+  border: none;
+  border-radius: 35px;
+  font-weight: 900;
+  font-size: 15px;
+  padding: 11px;
+  margin-right: 10px;
+}
+
 .form-box button[type='submit'] {
   border: none;
   cursor: pointer;
-  width: 250px;
-  height: 70px;
-  border-right: 5px;
+  width: 159px;
   background-color: rgb(235, 23, 0);
   color: rgb(254, 241, 238);
   font-weight: bold;
-  font-size: 25px;
+  font-size: 18px;
   transition: 0.5s;
+  margin: 0 auto;
 }
 
 .text-center {
@@ -285,11 +298,15 @@ pages styling */
   text-align: left;
 }
 
+.link-home {
+  font-size: 25px;
+  text-decoration: none;
+  background-color: transparent;
+  color: #f04a00;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .navbar {
-    display: none;
-  }
   .header-text {
     font-size: 3rem;
   }

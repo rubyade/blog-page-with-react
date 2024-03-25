@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
@@ -29,8 +28,10 @@ const LoginForm = (props) => {
   });
 
   return (
-    <div className='container-fluid mb-6'>
-      <Link to='/'>Home</Link>
+    <div className='container-fluid mb-6 login-container'>
+      <Link className='link-home' to='/'>
+        Home
+      </Link>
       <div className='row'>
         <div className='col-lg-6 col-md-6 d-none d-md-block image-container'></div>
         <div className='col-lg-6 col-md-6 form-container'>
