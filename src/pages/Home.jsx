@@ -20,9 +20,9 @@ function Home() {
     }
   };
 
-  useEffect(() => {
-    fetchQuote();
-  }, []);
+  // useEffect(() => {
+  //   fetchQuote();
+  // }, []);
 
   return (
     <div>
