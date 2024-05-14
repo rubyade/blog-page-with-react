@@ -11,29 +11,6 @@ import Navbar from './components/navbar/Navbar.jsx';
 // import NotFound from './pages/NotFound.jsx';
 import Home from './pages/Home.jsx';
 
-// const router = createBrowserRouter([
-//   {
-//     path: '/',
-//     element: <App />,
-//     errorElement: <NotFound />,
-//   },
-
-//   {
-//     path: '/login',
-//     element: <LoginForm label='LOGIN' />,
-//   },
-
-//   {
-//     path: '/sign-up',
-//     element: <SignupForm label='SIGN-UP' />,
-//   },
-
-//   {
-//     path: '/blog-post',
-//     element: <BlogPostForm label='SUBMIT' />,
-//   },
-// ]);
-
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Navbar />}>
