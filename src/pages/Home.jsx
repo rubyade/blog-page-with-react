@@ -32,7 +32,7 @@ function Home() {
         <Button
           type='button'
           handleClick={fetchQuote}
-          label='CLICK TO GET  A BEAUTIFUL QUOTE'
+          label='CLICK HERE TO GET  A BEAUTIFUL QUOTE'
         />
         {quote && <p className='quote'>{quote}</p>}
       </div>

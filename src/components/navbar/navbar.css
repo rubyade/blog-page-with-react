@@ -23,7 +23,7 @@ ul li {
   cursor: pointer;
   padding: 10px 20px;
   font-size: 18px;
-  position: relative;
+  /* position: relative; */
 }
 
 #navbar-link li a {
@@ -45,7 +45,7 @@ ul li {
   width: 30%;
   height: 2px;
   background: #34d399;
-  position: absolute;
+  /* position: absolute; */
   bottom: -4px;
   left: 20px;
 }
@@ -57,8 +57,6 @@ ul li {
 }
 
 #mobile {
-  width: 70px;
-  height: 50px;
   background: none;
   border: none;
   color: #000;
@@ -123,18 +121,16 @@ ul li {
   }
 
   #mobile {
-    width: 70px;
-    height: 50px;
     background: none;
     border: none;
     color: #000;
     font-size: 2.5rem;
     cursor: pointer;
     display: none;
+    font-size: 1.8rem;
+    padding-top: 0.5rem;
+    z-index: 1;
   }
-}
-
-@media only screen and (max-width: 600px) {
   .dark #navbar-link {
     background: #000;
     color: #fff;
@@ -142,14 +138,16 @@ ul li {
   .navbar {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    padding-bottom: 35px;
+    /* padding-bottom: 35px; */
+    position: relative;
+    padding: 15px 3%;
   }
 
   .logo {
-    width: 215px;
+    width: 100px;
   }
 
   #navbar-link {
@@ -159,44 +157,52 @@ ul li {
     flex-direction: column;
     align-items: flex-start;
     background-color: #fff;
-    position: absolute;
-    top: 307px;
-    right: -300px;
-    padding: 40px 0 0 10px;
-    width: 300px;
+    position: fixed;
+    top: 0px;
+    right: -325px;
+    padding: 90px 0px 0px 25px;
+    width: 320px;
     height: 85vh;
     margin-bottom: 25px;
     box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.1);
     transition: 0.3s ease-in-out;
     overflow: scroll;
     height: calc(100vh - 85px);
+    z-index: 1;
   }
-}
+  #navbar-link.active {
+    right: 0px;
+  }
 
-#navbar-link.active {
-  right: 0px;
-}
+  #navbar-link li {
+    margin-bottom: 25px;
+  }
+  .search-box {
+    padding: 0px 0px;
+    width: 7.5rem;
+    /* margin-right: 0.5rem; */
+  }
+  h1 {
+    font-size: 0.8rem;
+    padding-right: 0.8rem;
+    font-weight: bold;
+    padding-top: 0.5rem;
+  }
 
-#navbar-link li {
-  margin-bottom: 25px;
-}
-.search-box {
-  padding: 5px 9px;
-  width: 9.7rem;
-}
+  .search-box input {
+    max-width: 90px;
+  }
+  .toggle-icon {
+    width: 36px;
+    margin-left: 0px;
+  }
+  #mobile {
+    display: block;
+  }
 
-.search-box input {
-  max-width: 116px;
-}
-.toggle-icon {
-  margin-left: 0px;
-}
-#mobile {
-  display: block;
-}
-
-#mobile i {
-  padding-left: 30px;
+  /* #mobile i {
+    padding-left: 30px;
+  } */
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
