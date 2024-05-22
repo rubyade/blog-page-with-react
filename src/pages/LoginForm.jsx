@@ -29,6 +29,7 @@ const LoginForm = (props) => {
 
   return (
     <div className='container-fluid mb-6 login-container'>
+      <hr />
       <Link className='link-home' to='/'>
         Home
       </Link>

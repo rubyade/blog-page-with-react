@@ -81,9 +81,6 @@ pages styling */
   background-size: cover;
   height: 100vh;
 }
-.login-container {
-  background-color: gainsboro;
-}
 
 .signup-container {
   background-color: #fff;
@@ -101,7 +98,6 @@ pages styling */
 }
 
 .form-container {
-  background-color: #fccc00;
   display: flex;
   justify-content: center;
   padding-top: 12%;
@@ -303,14 +299,21 @@ pages styling */
 }
 
 .link-home {
-  font-size: 25px;
   text-decoration: none;
   background-color: transparent;
-  color: #f04a00;
+  color: grey;
+}
+
+hr {
+  padding-bottom: 1rem;
+  margin: 0;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+  hr {
+    display: none;
+  }
   .header-text {
     font-size: 3rem;
   }

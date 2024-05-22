@@ -35,6 +35,7 @@ const BlogPostForm = (props) => {
 
   return (
     <div className='container-fluid signup-container'>
+      <hr />
       <Link className='link-home' to='/'>
         Home
       </Link>
