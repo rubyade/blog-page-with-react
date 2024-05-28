@@ -43,6 +43,11 @@ body {
   color: #fff;
 }
 
+.dark .btn {
+  background-color: #222;
+  border: 1px solid white;
+}
+
 /* 
 pages styling */
 
@@ -82,9 +87,6 @@ pages styling */
   height: 100vh;
 }
 
-.signup-container {
-  background-color: #fff;
-}
 .image-container-signup {
   background: url('assets/Storefront.svg') center no-repeat;
   background-size: cover;
@@ -104,7 +106,6 @@ pages styling */
 }
 
 .form-container-signup {
-  background-color: rgb(254, 241, 238);
   display: flex;
   justify-content: center;
   padding-top: 12%;
@@ -249,11 +250,8 @@ pages styling */
 }
 
 .form-box button[type='submit'] {
-  border: none;
   cursor: pointer;
   width: 159px;
-  background-color: rgb(235, 23, 0);
-  color: rgb(254, 241, 238);
   font-weight: bold;
   font-size: 18px;
   transition: 0.5s;
